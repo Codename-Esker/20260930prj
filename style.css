@@ -1,0 +1,220 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    background-color: #f8f6f0;
+    line-height: 1.6;
+}
+
+/* 헤더 & 네비게이션 */
+header {
+    background-color: #3e2723;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #d7ccc8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* 서브페이지 헤더 */
+.page-header {
+    background-color: #5d4037;
+    color: #fff;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+/* 메인 배너 */
+.main-banner {
+    background-color: #d7ccc8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.main-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3e2723;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 공통 컨텐츠 영역 */
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.title, .category {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3e2723;
+    padding-bottom: 5px;
+}
+
+/* 메뉴 리스트 (그리드 Layout) */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.menu-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    background-color: #eee;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-text {
+    padding: 15px;
+}
+
+.menu-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.menu-text p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-text strong {
+    color: #8d6e63;
+}
+
+/* 소개 섹션 */
+.cafe-intro {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cafe-image {
+    flex: 1;
+    min-height: 200px;
+    background-color: #eee;
+}
+
+.cafe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cafe-text {
+    flex: 2;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* 갤러리 그리드 */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 12px;
+    font-size: 0.95rem;
+    color: #444444;
+    font-weight: 500;
+}
+
+.notice {
+    text-align: center;
+    color: #777;
+    margin: 30px 0;
+    font-size: 0.9rem;
+}
+
+/* 푸터 */
+footer {
+    background-color: #3e2723;
+    color: #d7ccc8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
